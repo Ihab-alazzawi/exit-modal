@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Exit Modal by Ihab Alazzawi</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="flipclock.css">
+
+  <!-- external dependencies -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.12/ouibounce.min.js'></script>
+  <script src="flipclock.min.js"></script>
+
+</head>
+
+<body>
+  <p class='devtask'>CF Dev Task</p>
+  <!-- Ouibounce Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-body">
+      <div class="modal-content">
+        <h2>WAIT! SPECIAL OFFER FOR
+          <strong id='city'></strong> RESIDENTS...</h2>
+        <h1>Claim your instant discount before the timer runs out!</h1>
+        <div class="clock"></div>
+        <button>CLAIM DISCOUNT</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src='main.js'></script>
+  <script type="text/javascript">
+    var clock;
+
+    $(document).ready(function () {
+
+      clock = $('.clock').FlipClock(3600, {
+        countdown: true
+      });
+    });
+  </script>
+</body>
+
+</html>
