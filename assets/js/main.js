@@ -15,6 +15,6 @@ $('#myModal .modal').on('click', function(e) {
   e.stopPropagation();
 });
 
-$.getJSON('http://ip-api.com/json').then(data => {
+$.getJSON('http://ip-api.com/json', function(data) {
   $('#city').html(data.city.toUpperCase());
 });
